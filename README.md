@@ -14,7 +14,6 @@ To help users and data enthusiasts visually analyze relationships between differ
 
 - ✅ Dropdown menu for column selection
 - 📈 Dynamic graphs (Bar Chart, Pie Chart, Scatter Plot)
-- ✏️ Auto-updating titles and plot labels based on selection
 - 🔄 Real-time data rendering using Flask and Jinja2
 - 📊 Clean and beginner-friendly UI for interacting with data
 
@@ -82,16 +81,18 @@ python app.py
 4. Open in browser
 Visit: http://127.0.0.1:5000
 
-🧾 Dataset Description
+🗂️ Dataset Description
+The dataset was self-scraped from PakWheels.com using our own Python web scraping tool. It includes the following columns:
+•	Title
+•	Model
+•	City
+•	Distance
+•	Engine
+•	Fuel Type
+•	Price
+•	Transmission Type
+These features were cleaned and prepared for analysis using regular expressions and string manipulation techniques.
 
-Column Name	Description
-Car_Name	Name of the car
-Fuel_Type	Type of fuel used (Petrol, Diesel, etc.)
-Transmission	Manual or Automatic
-Seller_Type	Individual or Dealer
-Engine	Size of the engine (e.g., 1248cc, 72kWh)
-Distance	Distance driven (in kilometers)
-Price	Price of the car
 
 🔍 Learning Outcomes
 Understanding of EDA (Exploratory Data Analysis)
