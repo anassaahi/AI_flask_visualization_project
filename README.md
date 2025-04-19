@@ -22,7 +22,25 @@ To help users and data enthusiasts visually analyze relationships between differ
 
 ## 📁 Project Structure
 
-car_price_app/ │ ├── app.py # Flask backend logic ├── car_data.csv # Main dataset ├── templates/ │ └── index.html # Home page with dropdown and plot ├── static/ │ └── styles.css # Optional CSS styling ├── screenshots/ # Screenshots used in documentation │ ├── dropdown.png │ ├── bar_plot.png │ ├── pie_chart.png │ └── scatter_plot.png ├── requirements.txt # Python package dependencies └── README.md # Project documentation
+car_price_app/
+│
+├── app.py                # Flask backend logic
+├── car_data.csv          # Main dataset
+│
+├── templates/            # HTML templates
+│   └── index.html        # Home page with dropdown and plot
+│
+├── static/               # Static files like CSS
+│   └── styles.css        # Optional CSS styling
+│
+├── screenshots/          # Screenshots used in documentation
+│   ├── dropdown.png
+│   ├── bar_plot.png
+│   ├── pie_chart.png
+│   └── scatter_plot.png
+│
+├── requirements.txt      # Python package dependencies
+└── README.md             # Project documentation
 
 yaml
 Copy
