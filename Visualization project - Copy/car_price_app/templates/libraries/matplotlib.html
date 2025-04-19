@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="library-header">
+    <h1>Matplotlib Visualizations</h1>
+    <p class="lead">All visualizations created using Matplotlib</p>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Price Distribution</h5>
+                <img src="{{ url_for('static', filename='images/matplotlib/price_distribution.png') }}" 
+                     class="img-fluid" alt="Price Distribution">
+                <p class="mt-2">Histogram showing the distribution of car prices</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Distance Distribution</h5>
+                <img src="{{ url_for('static', filename='images/matplotlib/distance_distribution.png') }}" 
+                     class="img-fluid" alt="Distance Distribution">
+                <p class="mt-2">Histogram showing the distribution of distance driven</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Engine Size Distribution</h5>
+                <img src="{{ url_for('static', filename='images/matplotlib/engine_distribution.png') }}" 
+                     class="img-fluid" alt="Engine Distribution">
+                <p class="mt-2">Histogram showing engine size distribution</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Price vs Distance</h5>
+                <img src="{{ url_for('static', filename='images/matplotlib/price_vs_distance.png') }}" 
+                     class="img-fluid" alt="Price vs Distance">
+                <p class="mt-2">Scatter plot showing price vs distance relationship</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Fuel Type Distribution</h5>
+                <img src="{{ url_for('static', filename='images/matplotlib/fuel_type_pie.png') }}" 
+                     class="img-fluid" alt="Fuel Type Distribution">
+                <p class="mt-2">Pie chart showing fuel type distribution</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Back to Home</a>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="library-header">
+    <h1>Seaborn Visualizations</h1>
+    <p class="lead">All visualizations created using Seaborn</p>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Price Distribution with KDE</h5>
+                <img src="{{ url_for('static', filename='images/seaborn/price_distribution.png') }}" 
+                     class="img-fluid" alt="Price Distribution">
+                <p class="mt-2">Histogram with KDE showing price distribution</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Distance Distribution with KDE</h5>
+                <img src="{{ url_for('static', filename='images/seaborn/distance_distribution.png') }}" 
+                     class="img-fluid" alt="Distance Distribution">
+                <p class="mt-2">Histogram with KDE showing distance distribution</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Price vs Distance by Fuel Type</h5>
+                <img src="{{ url_for('static', filename='images/seaborn/price_vs_distance.png') }}" 
+                     class="img-fluid" alt="Price vs Distance">
+                <p class="mt-2">Scatter plot showing relationship between price and distance by fuel type</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Average Price by Fuel Type</h5>
+                <img src="{{ url_for('static', filename='images/seaborn/avg_price_fuel.png') }}" 
+                     class="img-fluid" alt="Average Price by Fuel">
+                <p class="mt-2">Bar plot showing average prices by fuel type</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Transmission Type Distribution</h5>
+                <img src="{{ url_for('static', filename='images/seaborn/transmission_dist.png') }}" 
+                     class="img-fluid" alt="Transmission Distribution">
+                <p class="mt-2">Count plot showing transmission type distribution</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Back to Home</a>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="library-header">
+    <h1>Pandas Visualizations</h1>
+    <p class="lead">All visualizations created using Pandas plotting</p>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Price Distribution</h5>
+                <img src="{{ url_for('static', filename='images/pandas/price_distribution.png') }}" 
+                     class="img-fluid" alt="Price Distribution">
+                <p class="mt-2">Histogram showing price distribution using Pandas</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Model Year Distribution</h5>
+                <img src="{{ url_for('static', filename='images/pandas/model_distribution.png') }}" 
+                     class="img-fluid" alt="Model Distribution">
+                <p class="mt-2">Bar plot showing car count by model year</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-12">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Scatter Matrix</h5>
+                <img src="{{ url_for('static', filename='images/pandas/scatter_matrix.png') }}" 
+                     class="img-fluid" alt="Scatter Matrix">
+                <p class="mt-2">Scatter matrix showing relationships between key variables</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Fuel Type Distribution</h5>
+                <img src="{{ url_for('static', filename='images/pandas/fuel_type_pie.png') }}" 
+                     class="img-fluid" alt="Fuel Type Distribution">
+                <p class="mt-2">Pie chart showing fuel type proportions</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Average Price by Transmission</h5>
+                <img src="{{ url_for('static', filename='images/pandas/avg_price_transmission.png') }}" 
+                     class="img-fluid" alt="Average Price by Transmission">
+                <p class="mt-2">Bar plot showing average prices by transmission type</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Back to Home</a>
+{% endblock %}

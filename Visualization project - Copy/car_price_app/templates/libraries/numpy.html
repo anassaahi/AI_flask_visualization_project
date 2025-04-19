@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="library-header">
+    <h1>NumPy Visualizations</h1>
+    <p class="lead">All visualizations created using NumPy with Matplotlib rendering</p>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Price Distribution</h5>
+                <img src="{{ url_for('static', filename='images/numpy/price_histogram.png') }}" 
+                     class="img-fluid" alt="Price Distribution">
+                <p class="mt-2">Histogram of car prices created with NumPy's histogram function</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Distance vs Price</h5>
+                <img src="{{ url_for('static', filename='images/numpy/distance_price_scatter.png') }}" 
+                     class="img-fluid" alt="Distance vs Price">
+                <p class="mt-2">Scatter plot showing relationship between distance and price</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Engine Size vs Price Heatmap</h5>
+                <img src="{{ url_for('static', filename='images/numpy/engine_price_heatmap.png') }}" 
+                     class="img-fluid" alt="Engine Size vs Price Heatmap">
+                <p class="mt-2">2D histogram created with NumPy showing relationship between engine size and price</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Price Trend by Model Year</h5>
+                <img src="{{ url_for('static', filename='images/numpy/price_moving_avg.png') }}" 
+                     class="img-fluid" alt="Price Moving Average">
+                <p class="mt-2">Price trend with moving average calculated using NumPy's convolve function</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Price Stats by Fuel Type</h5>
+                <img src="{{ url_for('static', filename='images/numpy/fuel_price_stats.png') }}" 
+                     class="img-fluid" alt="Price Stats by Fuel Type">
+                <p class="mt-2">Mean and standard deviation of prices by fuel type using NumPy statistics functions</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Back to Home</a>
+{% endblock %}

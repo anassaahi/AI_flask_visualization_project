@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="mb-4">Car Price Estimation Visualizations</h1>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Matplotlib</h5>
+                    <img src="{{ url_for('static', filename='images/matplotlib/price_distribution.png') }}" 
+                         class="img-fluid" alt="Matplotlib Price Distribution">
+                    <a href="{{ url_for('matplotlib_page') }}" class="btn btn-primary mt-2">View Matplotlib</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Seaborn</h5>
+                    <img src="{{ url_for('static', filename='images/seaborn/transmission_dist.png') }}" 
+                         class="img-fluid" alt="Seaborn Price Distribution">
+                    <a href="{{ url_for('seaborn_page') }}" class="btn btn-primary mt-2">View Seaborn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Pandas</h5>
+                    <img src="{{ url_for('static', filename='images/pandas/fuel_type_counts.png') }}" 
+                         class="img-fluid" alt="Pandas Price Distribution">
+                    <a href="{{ url_for('pandas_page') }}" class="btn btn-primary mt-2">View Pandas</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">NumPy</h5>
+                    <img src="{{ url_for('static', filename='images/numpy/price_moving_avg.png') }}" 
+                         class="img-fluid" alt="NumPy Price Distribution">
+                    <a href="{{ url_for('numpy_page') }}" class="btn btn-primary mt-2">View NumPy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
