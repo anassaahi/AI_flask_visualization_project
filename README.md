@@ -22,6 +22,7 @@ To help users and data enthusiasts visually analyze relationships between differ
 
 ## 📁 Project Structure
 
+```
 car_price_app/
 │
 ├── app.py                # Flask backend logic
@@ -45,6 +46,8 @@ car_price_app/
 yaml
 Copy
 Edit
+
+```
 
 ---
 
